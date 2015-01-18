@@ -36,10 +36,10 @@ function create() {
     game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.add(changeScore);
     label_score = game.add.text (20, 20, "0");
     player = game.add.sprite(100, 200, "playerImg");
-    game.input.keyboard.addKey (Phaser.Keyboard.RIGHT) .onDown.add(moveRight);
-    game.input.keyboard.addKey (Phaser.Keyboard.LEFT).onDown.add(moveLeft);
-    game.input.keybpard.addKey (Phaser.Keyboard.DOWN).onDown.add(moveDown);
-    game.input.keyboard.addKey (Phaser.Keyboard.UP).onDown.add(moveUp);
+    game.input.keyboard.addKey (Phaser.Keyboard.L) .onDown.add(moveRight);
+    game.input.keyboard.addKey (Phaser.Keyboard.J).onDown.add(moveLeft);
+    game.input.keyboard.addKey (Phaser.Keyboard.K).onDown.add(moveDown);
+    game.input.keyboard.addKey (Phaser.Keyboard.I).onDown.add(moveUp);
 }
 
 /*
@@ -65,14 +65,14 @@ function spaceHandler(){
 }
 
 function moveRight() {
-    player.x = player.x + 1
+    player.x = player.x + 5
 }
 function moveLeft() {
-    player.x = player.x - 1
+    player.x = player.x - 5
 }
 function moveDown() {
-    player.y = player.y + 1
+    player.y = player.y + 5
 }
 function moveUp() {
-    player.y = player.y - 1
+    player.y = player.y - 5
 }
